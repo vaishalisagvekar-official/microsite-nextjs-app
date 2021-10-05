@@ -1,0 +1,600 @@
+/* body {
+    overflow: scroll;
+} */
+#container {
+	width: 100vw;
+	height: 100vh;
+}
+#landing-page-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 20%;
+}
+#partner-logo-wrapper {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#partner-logo {
+	height: auto;
+	width: 57%;
+}
+#wysa-logo-wrapper {
+	width: 35%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#wysa-logo {
+	height: 40%;
+}
+#landing-page-content {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+	height: 80%;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+	#partner1-lpc-col-0 {
+		background: url(/assets/images/girl_image.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 70%;
+	}
+	#lpc-col-0-curve {
+		background: url(/assets/images/white_curve.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+#partner1-lpc-col-0,
+#partner2-lpc-col-0 {
+	width: 34%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+#lpc-col-0-curve {
+	position: absolute;
+	right: 0;
+	top: -1px;
+	width: 40%;
+	height: 101%;
+	z-index: 2;
+}
+#lpc-col-0-white-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 20%;
+	background: linear-gradient(to bottom, white, transparent);
+}
+#lpc-col-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 33%;
+	box-sizing: border-box;
+	height: 80%;
+}
+#lpc-col-1-aster-logo {
+	width: 60%;
+	margin-top: 25px;
+}
+#lpc-col-1-title {
+	font-family: quicksand-bold, sans-serif;
+	font-size: 1.8em;
+	margin: 50px 0 20px;
+	text-align: center;
+}
+.lpc-col-1-description {
+	font-family: roboto, sans-serif;
+	font-size: 1.1em;
+	margin: 15px 0;
+	text-align: center;
+	letter-spacing: 0.8px;
+	line-height: 1.8em;
+}
+#lpc-col-1-download-app-btn {
+	font-family: roboto-bold, sans-serif;
+	background: #bc5817;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 20px 80px;
+	border-radius: 30px;
+	margin-top: 50px;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+	font-size: 14px;
+}
+#lpc-col-1-email-input-container {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10% 0 0;
+}
+#lpc-col-1-email-input-wrapper {
+	width: 90%;
+	display: flex;
+}
+.lpc-col-1-email-input {
+	width: 80%;
+	flex-grow: 1;
+	border-radius: 7px;
+	outline: none;
+	height: 15px;
+	padding: 20px;
+	border: 1px solid #a1a1a1;
+	background: #fff;
+	font-size: 15px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	box-shadow: 0 0 4px 2px transparent;
+}
+.lpc-col-1-email-input:focus {
+	background: #fff;
+	border: 1px solid #c26719;
+	box-shadow: 0 0 4px 2px rgba(188, 88, 23, 0.14);
+}
+.lpc-col-1-email-input::placeholder {
+	color: #989898;
+	font-size: 14px;
+}
+.lpc-col-1-email-input-red {
+	border: 1px solid rgba(255, 0, 0, 0.5);
+	box-shadow: 0 0 4px 2px rgba(255, 0, 0, 0.14);
+}
+.lpc-col-1-email-submit {
+	width: 70px;
+	height: 55px;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	border: 0px;
+}
+#arrow-desktop,
+#arrow-mobile {
+	width: 28px;
+	height: 28px;
+	fill: #a1a1a1;
+}
+.lpc-col-1-email-submit-inactive {
+	background-color: #e4e4e4;
+	box-shadow: 0 0 4px 2px transparent;
+	cursor: not-allowed;
+}
+.lpc-col-1-email-submit-active {
+	background-color: #c26719;
+	box-shadow: 0 0 4px 2px rgba(188, 88, 23, 0.14);
+	cursor: pointer;
+}
+.lpc-col-1-email-submit-loading {
+	background: url(/assets/images/circular_loader.svg);
+	background-color: #c26719;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+}
+.lpc-col-1-email-input-error {
+	width: 90%;
+	font-family: roboto, sans-serif;
+	font-size: 12px;
+	color: red;
+	margin: 5px 0;
+	height: 12px;
+}
+.lpc-col-1-email-input-warning {
+	width: 90%;
+	font-family: roboto, sans-serif;
+	font-size: 12px;
+	color: #a1a1a1;
+	margin: 5px 0;
+	height: 12px;
+}
+#lpc-col-2,
+#lpc-col-2-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 33%;
+	height: 100%;
+}
+#lpc-col-2-orcha-logo,
+#lpc-col-2-orcha-logo-2 {
+	width: 35%;
+	margin-bottom: 50px;
+}
+#lpc-col-2-rating-image,
+#lpc-col-2-rating-image-2 {
+	width: 55%;
+}
+#lpc-col-2-recognition,
+#lpc-col-2-recognition-2 {
+	display: none;
+}
+#recognition-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+#warning {
+	width: 60%;
+	text-align: left;
+	font-family: roboto, sans-serif;
+	margin: 10px 0;
+	font-size: 12px;
+	color: #a1a1a1;
+}
+#lpc-col-2-collab-txt {
+	display: none;
+}
+#lpc-col-2-aster-logo {
+	display: none;
+}
+#lpc-col-2-partner-logo,
+#lpc-col-2-collab-logo {
+	display: none;
+}
+#floating-email-input-wrapper {
+	display: none;
+}
+#floating-email-input-container {
+	display: none;
+}
+#mobile-floating-download-app-btn,
+#mobile-floating-download-app-btn-wrapper {
+	display: none;
+}
+@media only screen and (max-width: 767px) {
+	#landing-page-header {
+		display: none;
+	}
+	#landing-page-content {
+		width: 95%;
+		display: block;
+		overflow: scroll;
+		height: 100%;
+		margin: 0 auto;
+	}
+	#landing-page-content:after {
+		content: '';
+		height: 100px;
+		display: block;
+	}
+	#lpc-col-0 {
+		display: none;
+	}
+	#lpc-col-1 {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+	}
+	#lpc-col-1-aster-logo {
+		display: none;
+	}
+	#lpc-col-2-aster-logo {
+		display: block;
+		width: 70%;
+		margin: 20px auto;
+	}
+	.lpc-col-1-email-input {
+		width: 65%;
+		flex-grow: 1;
+	}
+	.lpc-col-1-email-input::placeholder {
+		color: #989898;
+	}
+	.lpc-col-1-email-submit-inactive {
+		background-color: #e4e4e4;
+		box-shadow: 0 0 4px 2px transparent;
+		cursor: not-allowed;
+	}
+	#lpc-col-1-title {
+		font-size: 1.8em;
+		margin: 15px 0;
+	}
+	.lpc-col-1-description {
+		font-size: 0.9em;
+		margin: 10px 0;
+	}
+	#lpc-col-1-download-app-btn {
+		display: none;
+	}
+	#lpc-col-1-email-input-container {
+		display: none;
+	}
+	#lpc-col-2 {
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+	}
+	#lpc-col-2-2 {
+		width: 100%;
+		height: auto;
+		margin-top: 35px;
+	}
+	#lpc-col-2-recognition {
+		height: 20%;
+		display: block;
+	}
+	#lpc-col-2-recognition-2 {
+		margin: 20px auto;
+		width: 80%;
+		display: block;
+	}
+	#recognition-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 10%;
+	}
+	#lpc-col-2-orcha-logo {
+		width: 40%;
+		margin-bottom: 25px;
+	}
+	#lpc-col-2-rating-image {
+		width: 60%;
+	}
+	#lpc-col-2-orcha-logo-2,
+	#lpc-col-2-rating-image-2 {
+		display: none;
+	}
+	#lpc-col-2-partner-logo {
+		display: block;
+		width: 50%;
+		margin: 30px auto 0px auto;
+	}
+	#lpc-col-2-collab-logo {
+		display: block;
+		width: 50%;
+		margin: 0px auto 30px auto;
+	}
+	#lpc-col-2-collab-txt {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		text-align: right;
+		font-family: roboto, sans-serif;
+		margin-bottom: 15px;
+		font-size: 1em;
+	}
+	#floating-email-input-wrapper {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: linear-gradient(
+			to top,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		padding: 20px 0 0;
+		box-sizing: border-box;
+	}
+	#floating-email-input-container {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#mobile-floating-download-app-btn-wrapper {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: linear-gradient(
+			to top,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		padding: 30px 0 10px 0;
+		box-sizing: border-box;
+	}
+	#mobile-floating-download-app-btn {
+		box-sizing: border-box;
+		display: block;
+		font-family: roboto-bold, sans-serif;
+		background: #bc5817;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 20px 80px;
+		border-radius: 30px;
+		cursor: pointer;
+		letter-spacing: 1.5px;
+		font-size: 14px;
+		text-align: center;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	#landing-page-header {
+		display: none;
+	}
+	#landing-page-content {
+		width: 95%;
+		display: block;
+		overflow: scroll;
+		height: 100%;
+		margin: 0 auto;
+	}
+	#landing-page-content:after {
+		content: '';
+		height: 100px;
+		display: block;
+	}
+	#lpc-col-0 {
+		display: none;
+	}
+	#lpc-col-1 {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+	}
+	#lpc-col-1-aster-logo {
+		display: none;
+	}
+	#lpc-col-2-aster-logo {
+		display: block;
+		width: 70%;
+		margin: 20px auto;
+	}
+	.lpc-col-1-email-input {
+		background: #fff;
+		width: 85%;
+	}
+	.lpc-col-1-email-input::placeholder {
+		color: #989898;
+	}
+	.lpc-col-1-email-submit-inactive {
+		background-color: #e4e4e4;
+		box-shadow: 0 0 4px 2px transparent;
+		cursor: not-allowed;
+	}
+	#lpc-col-1-title {
+		font-size: 2.4em;
+		margin: 15px 0;
+	}
+	.lpc-col-1-description {
+		font-size: 1.2em;
+		margin: 15px 0;
+	}
+	#lpc-col-1-download-app-btn {
+		display: none;
+	}
+	#lpc-col-1-email-input-container {
+		display: none;
+	}
+	#lpc-col-2,
+	#lpc-col-2-2 {
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+	}
+	#lpc-col-2-recognition,
+	#lpc-col-2-recognition-2 {
+		margin: 20px auto;
+		width: 70%;
+		display: block;
+	}
+	#recognition-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 10%;
+	}
+	#lpc-col-2-orcha-logo {
+		width: 40%;
+		margin-bottom: 25px;
+	}
+	#lpc-col-2-rating-image {
+		width: 60%;
+	}
+	#lpc-col-2-orcha-logo-2,
+	#lpc-col-2-rating-image-2 {
+		display: none;
+	}
+	#lpc-col-2-partner-logo {
+		display: block;
+		width: 50%;
+		margin: 30px auto 0px auto;
+	}
+	#lpc-col-2-collab-logo {
+		display: block;
+		width: 50%;
+		margin: 0px auto 30px auto;
+	}
+	#lpc-col-2-collab-txt {
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+		text-align: right;
+		font-family: roboto, sans-serif;
+		margin-bottom: 50px;
+		font-size: 1.4em;
+	}
+	#floating-email-input-wrapper {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: linear-gradient(
+			to top,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		padding: 30px 0 0;
+		box-sizing: border-box;
+	}
+	#floating-email-input-container {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#mobile-floating-download-app-btn-wrapper {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: linear-gradient(
+			to top,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		padding: 30px 0 10px 0;
+		box-sizing: border-box;
+	}
+	#mobile-floating-download-app-btn {
+		box-sizing: border-box;
+		display: block;
+		font-family: roboto-bold, sans-serif;
+		background: #bc5817;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 20px 80px;
+		border-radius: 30px;
+		cursor: pointer;
+		letter-spacing: 1.5px;
+		font-size: 14px;
+		text-align: center;
+		width: 90%;
+		margin: 0 auto;
+	}
+}

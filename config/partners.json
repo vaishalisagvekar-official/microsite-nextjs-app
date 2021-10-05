@@ -1,0 +1,392 @@
+[
+    {
+        "projectName": "kohinoor",
+        "partnerName": "kohinoor",
+        "logoLong": "https://project.plotnetwork.in/assets/kohinoor_long.png",
+        "logoShort": "https://project.plotnetwork.in/assets/kohinoor_short.png",
+        "reportDesktop": "https://datastudio.google.com/embed/reporting/48e4bf8a-1b96-4a1f-9911-085f909c9e56/page/a2BAC",
+        "reportMobile": "https://datastudio.google.com/embed/reporting/f16fd757-bd4e-4ddf-81eb-97b29e568d90/page/a2BAC",
+        "leadClosingTime": 1,
+        "settings": {},
+        "websiteMenus" : {
+            "sections" : [
+                {
+                    "id" : "banner", 
+                    "title" : "Home", 
+                    "images" : [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg"
+                    ]
+                },
+                {
+                    "id": "about",
+                    "title": "About Us",
+                    "description": "Step into ‘The Chambers’- the premium commercial office space for entrepreneurs located at the iconic architectural marvel of Kohinoor Square. ‘The Chambers’ is located in Kohinoor Square from the 4th to the 13th floor with offices starting from 769 sq.ft to 1331 sq.ft (RERA Carpet Area). And here’s why it is probably a good decision to buy a Chambers office whether it is for end-use or for investment. Kohinoor Square is one of the tallest commercial towers in the country and is an iconic structure located at the centre of the city. Investments in iconic commercial properties appreciate faster and depreciate slower than the market. The location is congestion-free and will give you easy access to trains, metros and airports.",
+                    "brochureLink":
+                        "https://project-microsite-data.s3.amazonaws.com/kohinoor_abcd/about/Vaishali's Resume.pdf",
+                    "image": "https://d1an7tx677lu0y.cloudfront.net/2021/07/image2.jpg"
+                },
+                {
+                    "id": "amenities",
+                    "title": "Amenities",
+                    "list": [
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        }
+                    ],
+                    "images": [
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t3-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t2-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t1-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/view1-min.jpg"
+                    ]
+                },
+                {
+                    "id": "virtualTour",
+                    "title": "Virtual Tour",
+                    "list": [
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/view3-min.jpg",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/lobby/"
+                        },
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/3bhk-min.png",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/3bhk/"
+                        },
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/2bhk.jpg",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/2bhk/"
+                        }
+                    ]
+                },
+                {
+                    "id": "floorPlans",
+                    "title": "Floor Plans ",
+                    "images": [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/4thfloor-min.png",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/5thfloor-min.png",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/6thfloor-1-min.png"
+                    ]
+                },
+                {
+                    "id": "gallery",
+                    "title": "Gallery",
+                    "images": [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-m-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/et-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/13-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/entrance-m.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pr-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/14-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-m-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/et-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/13-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/entrance-m.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pr-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/14-copy-min.jpg"
+                    ]
+                },
+                {
+                    "id": "contactUs",
+                    "title": "Contact Us",
+                    "mapLink" : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.6467646648563!2d72.9112958!3d19.0818851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7e5017f4d61%3A0xd7833ccfd79b6242!2sRajshree%2011%20East!5e0!3m2!1sen!2sin!4v1632124537483!5m2!1sen!2sin"
+                },
+                {
+                    "id": "footer",
+                    "title": "Footer",
+                    "description": "This Project is Developed By M/s. Panchsheel 1 Upgrade LLP, Group Company of Rajshree Builders. The Project is registered as Rajshree Eleven East with MahaRERA Registration No. P51800030117, Available at http://maharera.mahaonline.gov.in",
+                    "disclaimer": "This is not an offer, invitation to offer, and/or commitment of any nature and the content hereof is not and should not be constructed as an offer/invitation to offer/contract or any intention thereof and/or any disclosure under any statute of any nature whatsoever. All plans, designs, Images, renders, specification, dimensions, facilities and other details herein are artistic impressions and stock images and purely for illustrative and representational purpose and indicative in nature and the intended recipient should note that these are to be treated as purely provisional and informative and as such only tentative subject to approval from respective authorities. No warranty is expressly or impliedly given that the completed development will comply in any degree with such artist’s impression as depicted. The photographs contained herein are stock/standard photography and may have been taken at at location other that the project site and are used to indicate a conceptual lifestyles. The actual images/views have been enhanced/touched up/airbrushed for visual, illustrative and creative purposes. All specifications of the flat/project shall be as per the final agreement between the parties. Recipients are advised to use their discretion in relying on the information/amenities described/described/shown herein. The visitor/recipient is aware that the furniture, fittings and fixtures displayed in the sample/show flat/ show residence at the sales pavilion /brouchers are only for the purpose of showcasing the flats and we shall not be liable, required and/or obliged to procide any further, fittings as displayed in the sample/show flat/show residence at the sales pavilion/brochuers. The color shades of wall, tiles etc., are for representational purpose and will vary in planning and designing and upon actual construction. The render for internal spaces is only to serve as an example of the suggested space management and possible utilization of space. Any party desirous/interested in the project need to enter into agreement for sale and the development/transaction shall be governed by the terms and conditions of the agreement for sale. Project Financed by Bajaj Home Finance Ltd. (BHFL). *Government taxes as applicable. *Terms and Conditions apply."
+                }
+            ]
+        }
+    },
+    {
+        "projectName": "rajshree",
+        "partnerName": "rajshree",
+        "logoLong": "https://project.plotnetwork.in/assets/rajshree_long.png",
+        "logoShort": "https://project.plotnetwork.in/assets/rajshree_short.png",
+        "reportDesktop": "https://datastudio.google.com/embed/reporting/700caa80-b1bc-42b3-9568-eccfc7e1f064/page/a2BAC",
+        "reportMobile": "https://datastudio.google.com/embed/reporting/c63435b4-c4ff-417e-9847-aa0e7363e809/page/a2BAC",
+        "settings": {},
+        "websiteMenus" : {
+            "sections" : [
+                {
+                    "id" : "banner", 
+                    "title" : "Home", 
+                    "images" : [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg"
+                    ]
+                },
+                {
+                    "id": "about",
+                    "title": "About Us",
+                    "description": "Step into ‘The Chambers’- the premium commercial office space for entrepreneurs located at the iconic architectural marvel of Kohinoor Square. ‘The Chambers’ is located in Kohinoor Square from the 4th to the 13th floor with offices starting from 769 sq.ft to 1331 sq.ft (RERA Carpet Area). And here’s why it is probably a good decision to buy a Chambers office whether it is for end-use or for investment. Kohinoor Square is one of the tallest commercial towers in the country and is an iconic structure located at the centre of the city. Investments in iconic commercial properties appreciate faster and depreciate slower than the market. The location is congestion-free and will give you easy access to trains, metros and airports.",
+                    "brochureLink":
+                        "https://project-microsite-data.s3.amazonaws.com/kohinoor_abcd/about/Vaishali's Resume.pdf",
+                    "image": "https://d1an7tx677lu0y.cloudfront.net/2021/07/image2.jpg"
+                },
+                {
+                    "id": "amenities",
+                    "title": "Amenities",
+                    "list": [
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        }
+                    ],
+                    "images": [
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t3-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t2-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t1-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/view1-min.jpg"
+                    ]
+                },
+                {
+                    "id": "virtualTour",
+                    "title": "Virtual Tour",
+                    "list": [
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/view3-min.jpg",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/lobby/"
+                        },
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/3bhk-min.png",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/3bhk/"
+                        },
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/2bhk.jpg",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/2bhk/"
+                        }
+                    ]
+                },
+                {
+                    "id": "floorPlans",
+                    "title": "Floor Plans ",
+                    "images": [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/4thfloor-min.png",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/5thfloor-min.png",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/6thfloor-1-min.png"
+                    ]
+                },
+                {
+                    "id": "gallery",
+                    "title": "Gallery",
+                    "images": [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-m-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/et-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/13-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/entrance-m.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pr-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/14-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-m-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/et-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/13-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/entrance-m.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pr-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/14-copy-min.jpg"
+                    ]
+                },
+                {
+                    "id": "contactUs",
+                    "title": "Contact Us",
+                    "mapLink" : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.6467646648563!2d72.9112958!3d19.0818851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7e5017f4d61%3A0xd7833ccfd79b6242!2sRajshree%2011%20East!5e0!3m2!1sen!2sin!4v1632124537483!5m2!1sen!2sin"
+                },
+                {
+                    "id": "footer",
+                    "title": "Footer",
+                    "description": "This Project is Developed By M/s. Panchsheel 1 Upgrade LLP, Group Company of Rajshree Builders. The Project is registered as Rajshree Eleven East with MahaRERA Registration No. P51800030117, Available at http://maharera.mahaonline.gov.in",
+                    "disclaimer": "This is not an offer, invitation to offer, and/or commitment of any nature and the content hereof is not and should not be constructed as an offer/invitation to offer/contract or any intention thereof and/or any disclosure under any statute of any nature whatsoever. All plans, designs, Images, renders, specification, dimensions, facilities and other details herein are artistic impressions and stock images and purely for illustrative and representational purpose and indicative in nature and the intended recipient should note that these are to be treated as purely provisional and informative and as such only tentative subject to approval from respective authorities. No warranty is expressly or impliedly given that the completed development will comply in any degree with such artist’s impression as depicted. The photographs contained herein are stock/standard photography and may have been taken at at location other that the project site and are used to indicate a conceptual lifestyles. The actual images/views have been enhanced/touched up/airbrushed for visual, illustrative and creative purposes. All specifications of the flat/project shall be as per the final agreement between the parties. Recipients are advised to use their discretion in relying on the information/amenities described/described/shown herein. The visitor/recipient is aware that the furniture, fittings and fixtures displayed in the sample/show flat/ show residence at the sales pavilion /brouchers are only for the purpose of showcasing the flats and we shall not be liable, required and/or obliged to procide any further, fittings as displayed in the sample/show flat/show residence at the sales pavilion/brochuers. The color shades of wall, tiles etc., are for representational purpose and will vary in planning and designing and upon actual construction. The render for internal spaces is only to serve as an example of the suggested space management and possible utilization of space. Any party desirous/interested in the project need to enter into agreement for sale and the development/transaction shall be governed by the terms and conditions of the agreement for sale. Project Financed by Bajaj Home Finance Ltd. (BHFL). *Government taxes as applicable. *Terms and Conditions apply."
+                }
+            ]
+        }
+    },
+    {
+        "isDeleted": false,
+        "projectName": "5dwiki",
+        "partnerName": "5dwiki",
+        "logoLong": "https://project.plotnetwork.in/assets/5dwiki_long.png",
+        "logoShort": "https://project.plotnetwork.in/assets/5dwiki_short.png",
+        "reportDesktop": "",
+        "reportMobile": "",
+        "leadClosingTime": 1,
+        "settings": {},
+        "websiteMenus" : {
+            "sections" : [
+                {
+                    "id" : "banner", 
+                    "title" : "Home", 
+                    "images" : [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg"
+                    ]
+                },
+                {
+                    "id": "about",
+                    "title": "About Us",
+                    "description": "Step into ‘The Chambers’- the premium commercial office space for entrepreneurs located at the iconic architectural marvel of Kohinoor Square. ‘The Chambers’ is located in Kohinoor Square from the 4th to the 13th floor with offices starting from 769 sq.ft to 1331 sq.ft (RERA Carpet Area). And here’s why it is probably a good decision to buy a Chambers office whether it is for end-use or for investment. Kohinoor Square is one of the tallest commercial towers in the country and is an iconic structure located at the centre of the city. Investments in iconic commercial properties appreciate faster and depreciate slower than the market. The location is congestion-free and will give you easy access to trains, metros and airports.",
+                    "brochureLink":
+                        "https://project-microsite-data.s3.amazonaws.com/kohinoor_abcd/about/Vaishali's Resume.pdf",
+                    "image": "https://d1an7tx677lu0y.cloudfront.net/2021/07/image2.jpg"
+                },
+                {
+                    "id": "amenities",
+                    "title": "Amenities",
+                    "list": [
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        },
+                        {
+                            "icon": "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/icon-1.png",
+                            "title": "amenity title 1"
+                        }
+                    ],
+                    "images": [
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t3-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t2-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/t1-min.jpg",
+                        "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/view1-min.jpg"
+                    ]
+                },
+                {
+                    "id": "virtualTour",
+                    "title": "Virtual Tour",
+                    "list": [
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/view3-min.jpg",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/lobby/"
+                        },
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/3bhk-min.png",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/3bhk/"
+                        },
+                        {
+                        "tourImageLink":
+                            "https://cp.rajshree11east.com/dinesh-sanghvi/wp-content/uploads/sites/4/2021/08/2bhk.jpg",
+                        "tourLink": "https://cp.rajshree11east.com/dinesh-sanghvi/2bhk/"
+                        }
+                    ]
+                },
+                {
+                    "id": "floorPlans",
+                    "title": "Floor Plans ",
+                    "images": [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/4thfloor-min.png",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/5thfloor-min.png",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/6thfloor-1-min.png"
+                    ]
+                },
+                {
+                    "id": "gallery",
+                    "title": "Gallery",
+                    "images": [
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-m-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/et-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/13-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/entrance-m.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pr-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/14-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pool-min-1.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/22-m-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/et-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/13-copy-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/entrance-m.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/lobby-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/pr-min.jpg",
+                        "https://d1an7tx677lu0y.cloudfront.net/2021/07/14-copy-min.jpg"
+                    ]
+                },
+                {
+                    "id": "contactUs",
+                    "title": "Contact Us",
+                    "mapLink" : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.6467646648563!2d72.9112958!3d19.0818851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7e5017f4d61%3A0xd7833ccfd79b6242!2sRajshree%2011%20East!5e0!3m2!1sen!2sin!4v1632124537483!5m2!1sen!2sin"
+                },
+                {
+                    "id": "footer",
+                    "title": "Footer",
+                    "description": "This Project is Developed By M/s. Panchsheel 1 Upgrade LLP, Group Company of Rajshree Builders. The Project is registered as Rajshree Eleven East with MahaRERA Registration No. P51800030117, Available at http://maharera.mahaonline.gov.in",
+                    "disclaimer": "This is not an offer, invitation to offer, and/or commitment of any nature and the content hereof is not and should not be constructed as an offer/invitation to offer/contract or any intention thereof and/or any disclosure under any statute of any nature whatsoever. All plans, designs, Images, renders, specification, dimensions, facilities and other details herein are artistic impressions and stock images and purely for illustrative and representational purpose and indicative in nature and the intended recipient should note that these are to be treated as purely provisional and informative and as such only tentative subject to approval from respective authorities. No warranty is expressly or impliedly given that the completed development will comply in any degree with such artist’s impression as depicted. The photographs contained herein are stock/standard photography and may have been taken at at location other that the project site and are used to indicate a conceptual lifestyles. The actual images/views have been enhanced/touched up/airbrushed for visual, illustrative and creative purposes. All specifications of the flat/project shall be as per the final agreement between the parties. Recipients are advised to use their discretion in relying on the information/amenities described/described/shown herein. The visitor/recipient is aware that the furniture, fittings and fixtures displayed in the sample/show flat/ show residence at the sales pavilion /brouchers are only for the purpose of showcasing the flats and we shall not be liable, required and/or obliged to procide any further, fittings as displayed in the sample/show flat/show residence at the sales pavilion/brochuers. The color shades of wall, tiles etc., are for representational purpose and will vary in planning and designing and upon actual construction. The render for internal spaces is only to serve as an example of the suggested space management and possible utilization of space. Any party desirous/interested in the project need to enter into agreement for sale and the development/transaction shall be governed by the terms and conditions of the agreement for sale. Project Financed by Bajaj Home Finance Ltd. (BHFL). *Government taxes as applicable. *Terms and Conditions apply."
+                }
+            ]
+        }
+    }
+]

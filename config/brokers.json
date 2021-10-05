@@ -1,0 +1,47 @@
+[
+    {
+        "_id": "6106e1dc1e90225078fe75cc",
+        "createdAt": 1627841049619,
+        "updatedAt": 1633291178358,
+        "isDeleted": false,
+        "fullName": "Prafull Jadhav",
+        "mobileNumber": "9819223231",
+        "emailId": "praful.jadhav78@gmail.com",
+        "reraNumber": "A51700028502",
+        "address": "Sadanand2/7, Shivaji Colony Road, Near Vital Mandir, Parnkuti, Kalyan East, Dist. Thane, Pin: 421306",
+        "companyName": "Individual",
+        "partnerName": "kohinoor",
+        "salesManagerId": "6106ad6241b9381c60eb6f22",
+        "projectId": "6155ecf72c34564cf89a2a53"
+    },
+    {
+        "_id": "6106e1dc1e90225078fe75cc",
+        "createdAt": 1627841049619,
+        "updatedAt": 1633291178358,
+        "isDeleted": false,
+        "fullName": "Dinesh Sanghavi",
+        "mobileNumber": "9819223231",
+        "emailId": "praful.jadhav78@gmail.com",
+        "reraNumber": "A51700028502",
+        "address": "Sadanand2/7, Shivaji Colony Road, Near Vital Mandir, Parnkuti, Kalyan East, Dist. Thane, Pin: 421306",
+        "companyName": "Individual",
+        "partnerName": "rajshree",
+        "salesManagerId": "6106ad6241b9381c60eb6f22",
+        "projectId": "6155ecf72c34564cf89a2a53"
+    },
+    {
+        "_id": "6106e1dc1e90225078fe75cc",
+        "createdAt": 1627841049619,
+        "updatedAt": 1633291178358,
+        "isDeleted": false,
+        "fullName": "Dharmesh",
+        "mobileNumber": "9819223231",
+        "emailId": "praful.jadhav78@gmail.com",
+        "reraNumber": "A51700028502",
+        "address": "Sadanand2/7, Shivaji Colony Road, Near Vital Mandir, Parnkuti, Kalyan East, Dist. Thane, Pin: 421306",
+        "companyName": "Individual",
+        "partnerName": "kohinoor",
+        "salesManagerId": "6106ad6241b9381c60eb6f22",
+        "projectId": "6155ecf72c34564cf89a2a53"
+    }
+]
