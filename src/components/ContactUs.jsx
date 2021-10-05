@@ -9,12 +9,14 @@ export default function ContactUs(props) {
 		console.log("form submitted")
 	}
     return (
-        <div id={props.section} className="row contactUs">
-            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                <EnquiryForm isFromModal={false}></EnquiryForm>
+        <div id={props.section} className="row">
+            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 contactUs">
+                <div className="contactUsColContent">
+                    <EnquiryForm isFromModal={false}></EnquiryForm>
+                </div>
             </div>
-            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 brokerDetails">
-                <div className="verticallyMiddle">
+            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 contactUs brokerDetails">
+                <div className="verticallyMiddle" className="contactUsColContent">
                     <p>[ OUR CONTACT DETAILS ]</p>
                     <h4>{brokerData.fullName}</h4>
                     <p>{`An authorized channel partner of `}</p>
@@ -60,7 +62,7 @@ export default function ContactUs(props) {
                 </div>
                 </div>
             </div>
-            <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 contactUs contactUsMap">
                 <iframe 
                     src={mapLink} 
                     className="fullSize"

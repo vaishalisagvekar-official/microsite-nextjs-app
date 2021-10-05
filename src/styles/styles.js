@@ -5,7 +5,7 @@ export default css.global`
 :root {
   --fontFamily: Verdana, sans-serif;
   --lineHeight: 28.125px; 
-  --themeColor: #f0a24f;
+  --themeColor: #C49675;
   --fontColor: white;
 }
 
@@ -229,15 +229,25 @@ export default css.global`
 }
 
 .contactUs {
-	padding: 20px;
+	padding: 0px;
 }
 
-.contactUs .brokerDetails{
+.contactUsColContent {
+  padding: 30px
+}
+
+.brokerDetails{
 	background-image: url(https://d1an7tx677lu0y.cloudfront.net/2021/07/bg1-contact-1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 	color: #e5e3e3;
+  margin: 30px 0;
+}
+
+.contactUsMap {
+  min-height : 500px;
+  margin: 30px 0;
 }
 
 .brokerDetails .row {
