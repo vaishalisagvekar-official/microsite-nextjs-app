@@ -24,8 +24,10 @@ export default function Amenities(props) {
                                     key={`amenityIcon_${index}`}
                                     onMouseOver={changeBackground}
                                     onMouseOut={revertBackground}>
-                                    <img className={`${props.imageCss} imgTag`} src={amenityObj.icon} />
-                                    <div className="amenityTitle">{amenityObj.title}</div>
+                                        <div style={{height:'fit-content', verticalAlign: 'middle', margin: 'auto' }}>
+                                            <img className={`${props.imageCss} imgTag`} src={amenityObj.icon} />
+                                            <div className="amenityTitle">{amenityObj.title}</div>
+                                        </div>
                                 </div>
                             );
                         })

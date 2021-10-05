@@ -4,6 +4,8 @@ import { withRouter } from 'next/router';
 import globalStyles from '../styles/styles.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from 'react-bootstrap/Modal';
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav';
 
 import SlideShow from './SlideShow';
 import AboutUs from './AboutUs';
@@ -37,6 +39,7 @@ class Home extends Component {
 
 	render() {
 		
+		const { logoLong } = this.props.projectData;
 		const { sections } = this.props.projectData.websiteMenus;
 
 		return (
@@ -44,35 +47,25 @@ class Home extends Component {
 			<style jsx global>
 					{globalStyles}
 			</style>
-			<nav className="navbar fixed-top navbar-expand-sm themeColor ">
-				<a className="navbar-brand" href="#">
-					<img 
-						className="logo"
-						src="https://cp.kohinoorsquare.in/praful-jadhav/wp-content/uploads/2020/08/logo-kohinoor.png" alt="" />
-				</a>
-				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<i className="fa fa-bars navbarIcon"></i>
-				</button>
-				<div className="collapse navbar-collapse" id="navbarNav">
-					<ul className="navbar-nav d-flex justify-content-end">
+			<Navbar collapseOnSelect expand="lg" fixed="top" className="navbar themeColor">
+				<Navbar.Brand href="#banner"><img 
+					className="logo"
+					src={logoLong} alt="Project Logo" /></Navbar.Brand>
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse id="responsive-navbar-nav" className="navbar-collapse">
+					<Nav className="me-auto navs">
 						{
 							sections.map((section, index) => {
-								const sectionName = section.title.toLocaleUpperCase();
-								if(index == 0){
-									return <li className="nav-item active" key={section.id}>
-												<a className="nav-link" href={`#${section.id}`}>{sectionName}
-												</a>
-											</li>
-								} else if(section.id !== 'footer'){
-									return <li className="nav-item" key={section.id}>
-												<a className="nav-link" href={`#${section.id}`}>{sectionName}</a>
-											</li>
+								if(section.id !== "footer"){
+									const sectionName = section.title.toLocaleUpperCase();
+									return <Nav.Link href={`#${section.id}`} className="nav-link">{sectionName}</Nav.Link>
 								}
 							})
 						}
-					</ul>
-				</div>
-			</nav>
+					</Nav>
+				</Navbar.Collapse>
+			</Navbar>
+			
 			{
 				sections.map((section) => {
 						switch (section.id) {

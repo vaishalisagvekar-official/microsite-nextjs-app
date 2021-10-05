@@ -2,6 +2,7 @@ const fs = require('fs');
 var path = require("path");
 const ObjectId = require('mongodb').ObjectId;
 
+import { getStaticKeys } from '../../common-methods/constants';
 import { updateFileData, readFileData } from '../../common-methods/file-operations';
 import { connectToDatabase } from '../../common-methods/database';
 const filePath = 'D:/plotnetwork/microsite-nextjs/partner-pages/partner-pages-main/config/data-broker.json';
@@ -15,8 +16,7 @@ async function handler(req, res) {
         let { db } = await connectToDatabase();
 
         const findBrokerQuery = {
-            partnerName : "kohinoor",
-            isDeleted : false
+            partnerName : getStaticKeys().partnerName
         }
         const requestObj = JSON.parse(req.body)
         if(requestObj.brokerId !== undefined) findBrokerQuery._id = new ObjectId(requestObj.brokerId);

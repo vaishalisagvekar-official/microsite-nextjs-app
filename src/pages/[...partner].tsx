@@ -1,7 +1,10 @@
 import React from 'react';
 
-import partners from '../../config/partners.json';
-import brokers from '../../config/brokers.json';
+// import partners from '../../config/partners.json';
+// import brokers from '../../config/brokers.json';
+
+import partners from '../../config/data-project.json';
+import brokers from '../../config/data-broker.json';
 
 // import Home from '../components/Home_1';
 import Home from '../components/Home';

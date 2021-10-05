@@ -2,8 +2,10 @@ const fs = require('fs');
 var path = require("path");
 const ObjectId = require('mongodb').ObjectId;
 
+import { getStaticKeys } from '../../common-methods/constants';
 import { updateFileData, readFileData} from '../../common-methods/file-operations';
 import { connectToDatabase } from '../../common-methods/database';
+
 const filePath = 'D:/plotnetwork/microsite-nextjs/partner-pages/partner-pages-main/config/data-project.json';
 const relativeFilePath = 'config/data-project.json';
 
@@ -14,8 +16,7 @@ async function handler(req, res) {
         let { db } = await connectToDatabase();
 
         const findProjectQuery = {
-            partnerName : "kohinoor",
-            isDeleted : false
+            partnerName : getStaticKeys().partnerName
         }
         const requestObj = JSON.parse(req.body)
         if(requestObj.projectId !== undefined) findProjectQuery._id = new ObjectId(requestObj.projectId);

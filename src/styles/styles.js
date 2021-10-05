@@ -9,6 +9,7 @@ export default css.global`
   --fontColor: white;
 }
 
+#gallery img,
 .btn, a {
   cursor: pointer;
 } 
@@ -30,15 +31,26 @@ export default css.global`
 }
 
 /* top header bar */
-.navbar-collapse li .nav-link{
+.navbar {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.navbar-collapse .nav-link{
 	color: var(--fontColor, white) !important;
   font-weight: 500;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
 }
 
-.navbar-collapse li .nav-link:hover{
+.navbar-collapse .nav-link:hover{
   color: var(blue, white) !important;
 }
 
+.navs {
+    width: fit-content;
+    justify-content: center;
+    margin: auto;
+}
 
 .navbarIcon {
   color: rgb(165 157 149);
@@ -199,7 +211,7 @@ export default css.global`
 
 .footer{
   text-align: center;
-  padding: 30px;
+  padding: 30px 30px 20px 30px;
   justify-content: center;
   font-size: inherit;
   color: white;
@@ -331,7 +343,7 @@ img {vertical-align: middle;}
   left: -100px;
   color: var(--fontColor, white);
   transform: rotate(-90deg);
-  top: 40%;
+  top: 60%;
   background-color: var(--themeColor, black);
   padding: 5px 10px;
   width: max-content;
@@ -393,15 +405,19 @@ img {vertical-align: middle;}
 }
 
 .viewGallery-content {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
+    // width: 100%;
+    // height: 100%;
+    // opacity: 1;
     background: black;
 }
 
+// .viewGallery-content .modal-content {
+//   background: black;
+// }
+
 .viewedImg {
   width: 100%;
-  height: 70vh
+  height: 63vh
 }
 
 .closeBtn {
@@ -428,6 +444,7 @@ img {vertical-align: middle;}
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  text-decoration: unset;
 }
 
 /* Position the "next button" to the right */
@@ -478,12 +495,14 @@ img {vertical-align: middle;}
   margin-top: 35px
 }
 
-.galleryListContainer #galleryListPrev,
-.galleryListContainer #galleryListNext {
-    color: white;
+.galleryListContainer .galleryListPrev,
+.galleryListContainer .galleryListNext {
+    color: var(--themeColor, black);
     font-size: 25px;
     vertical-align: middle;
     margin: auto 25px;
+    color: #7a7e81;
+    text-decoration: unset;
 }
 
 .galleryListContainer .rowDiv {
