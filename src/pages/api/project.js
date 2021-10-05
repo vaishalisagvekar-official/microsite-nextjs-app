@@ -18,6 +18,7 @@ async function handler(req, res) {
         const findProjectQuery = {
             partnerName : getStaticKeys().partnerName
         }
+        console.log("re body ",req.body)
         const requestObj = JSON.parse(req.body)
         if(requestObj.projectId !== undefined) findProjectQuery._id = new ObjectId(requestObj.projectId);
         

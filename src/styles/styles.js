@@ -20,8 +20,8 @@ export default css.global`
 
 /* Project logo */
 .logo { 
-	width: 150px;
-	height: 50px;
+	width: 230px;
+	height: 60px;
 }
 
 /* theme background color & font color */
