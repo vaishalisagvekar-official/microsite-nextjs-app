@@ -18,8 +18,8 @@ async function handler(req, res) {
         const findProjectQuery = {
             partnerName : getStaticKeys().partnerName
         }
-        console.log("re body ",req.body)
-        const requestObj = JSON.parse(req.body)
+        
+        const requestObj = JSON.parse(JSON.stringify(req.body))
         if(requestObj.projectId !== undefined) findProjectQuery._id = new ObjectId(requestObj.projectId);
         
         // fetch the projects
@@ -28,29 +28,36 @@ async function handler(req, res) {
             .find(findProjectQuery).toArray();
 
         var absolutePath = path.resolve(relativeFilePath);
-
-        if(requestObj.projectId){
-            readFileData(absolutePath).then(response => {
-                if(response.err !== undefined) return res.status(response.status).json(response);
-                
-                const oldProjects = JSON.parse(response.data);
-                const newProjects = oldProjects.map((project) => {
-                    if(project._id == projects[0]._id) return projects[0];
-                    return project;
-                });
-                updateFileData(absolutePath, newProjects).then(response => {
+        console.log(projects.length)
+        if(projects.length > 0){
+            if(requestObj.projectId){
+                readFileData(absolutePath).then(response => {
+                    if(response.err !== undefined) return res.status(response.status).json(response);
+                    let isNewProject = true;
+                    const oldProjects = JSON.parse(response.data);
+                    const newProjects = oldProjects.map((project) => {
+                        if(project._id == projects[0]._id) {
+                            isNewProject = false;
+                            return projects[0];
+                        }
+                        return project;
+                    });
+                    if(isNewProject) newProjects.push(projects[0]);
+                    updateFileData(absolutePath, newProjects).then(response => {
+                        res.status(response.status).json(response);
+                    });
+                })
+            } else {
+                updateFileData(absolutePath, projects).then(response => {
                     res.status(response.status).json(response);
                 });
-            })
+            }
         } else {
-
-            updateFileData(absolutePath, projects).then(response => {
-                res.status(response.status).json(response);
+            res.status(401).json({
+                message: "No projects found to update"
             });
         }
-        
     }
-    
 };
 
 export default handler;

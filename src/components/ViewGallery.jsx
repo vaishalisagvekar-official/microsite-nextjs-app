@@ -62,7 +62,7 @@ class ViewGallery extends React.Component {
 								images.map((singleImg, index) => {
 									return (
 										<div className="myGallerySlides" ref={this[`myGallerySlides${index}`]} key={`myGallerySlides${index}`}>
-											<img className="viewedImg imgTag" src={images[this.state.slideIndex]} />
+											<img className="viewedImg" src={images[this.state.slideIndex]} />
 										</div>
 									)
 								})
@@ -76,7 +76,7 @@ class ViewGallery extends React.Component {
 										images.map((singleImg, index) => {
 											return (
 												<div className="column" key={`column${index}`}>
-													<img className="demo cursor imgTag" ref={this[`demoRef${index}`]} src={singleImg} onClick={() => this.currentSlide(index)} alt="The Image" />
+													<img className="demo cursor" ref={this[`demoRef${index}`]} src={singleImg} onClick={() => this.currentSlide(index)} alt="The Image" />
 												</div>
 											)
 										})

@@ -14,7 +14,9 @@ export default function Amenities(props) {
     return (
         <div className="sectionTextColor">
             <div id={props.section} className="amenityContainer" >
-                <h2 className="sectionTitle">{title}</h2>
+                <h2 className="sectionTitle">{title} </h2>
+                <div className="titleBorder"></div>                
+                
                 <div className="row sectionContent">
                     {
                         list.map((amenityObj, index) => {
@@ -25,7 +27,7 @@ export default function Amenities(props) {
                                     onMouseOver={changeBackground}
                                     onMouseOut={revertBackground}>
                                         <div style={{height:'fit-content', verticalAlign: 'middle', margin: 'auto' }}>
-                                            <img className={`${props.imageCss} imgTag`} src={amenityObj.icon} />
+                                            <img className={`${props.imageCss}`} src={amenityObj.icon} />
                                             <div className="amenityTitle">{amenityObj.title}</div>
                                         </div>
                                 </div>

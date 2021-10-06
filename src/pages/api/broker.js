@@ -15,10 +15,12 @@ async function handler(req, res) {
         
         let { db } = await connectToDatabase();
 
+        console.log("re body ",req.body)
+        console.log("type of body ",typeof req.body)
         const findBrokerQuery = {
             partnerName : getStaticKeys().partnerName
         }
-        const requestObj = JSON.parse(req.body)
+        const requestObj = JSON.parse(JSON.stringify(req.body))
         if(requestObj.brokerId !== undefined) findBrokerQuery._id = new ObjectId(requestObj.brokerId);
 
         // fetch the brokers
@@ -29,23 +31,31 @@ async function handler(req, res) {
         console.log("brokers ",brokers.length);
         var absolutePath = path.resolve(relativeFilePath);
 
-        if(requestObj.brokerId){
-            readFileData(absolutePath).then(response => {
-                if(response.err !== undefined) return res.status(response.status).json(response);
-                
-                const oldBrokers = JSON.parse(response.data);
-                const newBrokers = oldBrokers.map((broker) => {
-                    if(broker._id == brokers[0]._id) return brokers[0];
-                    return broker;
-                });
-                updateFileData(absolutePath, newBrokers).then(response => {
+        if(brokers.length > 0){
+            if(requestObj.brokerId){
+                readFileData(absolutePath).then(response => {
+                    if(response.err !== undefined) return res.status(response.status).json(response);
+                    let isNewBroker = true;
+                    const oldBrokers = JSON.parse(response.data);
+                    const newBrokers = oldBrokers.map((broker) => {
+                        console.log("old broker sm id ",broker.salesManagerId)
+                        console.log("new broker sm id ",brokers[0].salesManagerId)
+                        if(broker._id == brokers[0]._id) {
+                            isNewBroker = false;
+                            return brokers[0];
+                        }
+                        return broker;
+                    });
+                    if(isNewBroker) newBrokers.push(brokers[0]);
+                    updateFileData(absolutePath, newBrokers).then(response => {
+                        res.status(response.status).json(response);
+                    });
+                })           
+            } else {
+                updateFileData(absolutePath, brokers).then(response => {
                     res.status(response.status).json(response);
                 });
-            })           
-        } else {
-            updateFileData(absolutePath, brokers).then(response => {
-                res.status(response.status).json(response);
-            });
+            }
         }
     }
     

@@ -40,9 +40,12 @@ class Home extends Component {
 	render() {
 		
 		const { logoLong } = this.props.projectData;
-		const { sections } = this.props.projectData.websiteMenus;
+		let sections = [];
+		if(this.props.projectData.websiteMenus !== undefined){
+			sections = this.props.projectData.websiteMenus.sections ? this.props.projectData.websiteMenus.sections : [];
+		}
 
-		return (
+	return (
 		<div className="microsite-content">
 			<style jsx global>
 					{globalStyles}

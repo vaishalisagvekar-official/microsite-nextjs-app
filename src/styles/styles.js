@@ -86,8 +86,24 @@ export default css.global`
    border-radius: 0;
 }
 
-.subSection {
-	padding: 100px 35px;
+.aboutUs {
+	padding: 100px 0;
+}
+
+.aboutSections {
+	padding: 0 35px;
+}
+
+.aboutTitle{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.titleBorder {
+    border-bottom: dotted;
+    width: 80px;
+    margin: auto;
+    color: white;
 }
 
 .description{
@@ -107,15 +123,13 @@ export default css.global`
   font-weight: 600;
 }
 
-/* .amenityContainer .sectionContent .col-xs-6 {
-  width: 50%;
-} */
-@media screen and (min-width: 577px) {
-  .sectionContent {
-    padding: 30px;
-    justify-content: center;
-  }
+.sectionContent {
+  padding: 30px;
+  justify-content: center;
+}
 
+@media screen and (min-width: 577px) {
+  
   .amenityIconContainr{
     margin: 15px;
     border: 1px solid #3c3939;
@@ -132,18 +146,16 @@ export default css.global`
 
   .carouselHeight {
     height: 90vh;
+    min-height: 300px;
   }
 
   .carouselHeight_1 {
     height: 80vh;
+    min-height: 270px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .sectionContent {
-    padding: 0px;
-    justify-content: center;
-  }
 
   .amenityIconContainr{
     margin: 8px;
@@ -161,10 +173,12 @@ export default css.global`
 
   .carouselHeight {
     height: 80%;
+    min-height: 300px;
   }
 
   .carouselHeight_1 {
     height: 60%;
+    min-height: 270px;
   }
 }
 
@@ -179,6 +193,7 @@ export default css.global`
 
   .carouselHeight_1 {
     height: 80%;
+    min-height: 270px;
   }
 }
 
@@ -187,17 +202,27 @@ export default css.global`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: fit-content
+    height: fit-content;
+    width: fit-content;
 }
 
 .carousel-indicators {
-  bottom: 30px;
+  bottom: 0;
+}
+
+.carousel-indicators button {
+  border-radius: 50% !important;
+  height: 15px !important;
+  width: 15px !important;
+  margin-right: 4px !important;
+  margin-left: 4px !important;
 }
 
 .tourBtn{
   background-color: rgba(55, 189, 60, 0.84);
   color: var(--fontColor, white);
   border-radius: 25px;
+  width: max-content;
 }
 
 .galleryImgDiv{
@@ -400,39 +425,9 @@ img {vertical-align: middle;}
   text-align: left;
 }
 
-#disclaimerId .title {
-  font-size: 1.75rem;
-  text-align: left;
-  color: black;
-  font-weight: 300;
-}
-
-/* Open Gallery  */
-.viewgallery-dialog {
-    height: 100vh;
-    max-width: 100%;
-    margin: 0;
-}
-
-.viewGallery-content {
-    // width: 100%;
-    // height: 100%;
-    // opacity: 1;
-    background: black;
-}
-
-// .viewGallery-content .modal-content {
-//   background: black;
-// }
-
 .viewedImg {
   width: 100%;
   height: 63vh
-}
-
-.closeBtn {
-  font-size: 30px;
-  color: white
 }
 
 #viewgalleryId img {
@@ -525,12 +520,6 @@ img {vertical-align: middle;}
 .galleryListContainer .rowDiv::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
   overflow: -moz-scrollbars-none;
-}
-
-.galleryListContainer > .row > .col {
-  display: inline-block;
-  float: none;
-  /* width: 25%; */
 }
 
 .demo {

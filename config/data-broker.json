@@ -10,10 +10,10 @@
         "address": "",
         "companyName": "Ocean",
         "projectId": "6155edf32c34564cf89a2a55",
-        "salesManagerId": "615c69cd2743108ae19a4960",
+        "salesManagerId": "615c697c2743108ae19a495d",
         "partnerName": "5dwiki",
         "createdAt": 1633446525625,
-        "updatedAt": 1633446557147,
+        "updatedAt": 1633520349559,
         "isDeleted": false
     },
     {
@@ -30,7 +30,41 @@
         "salesManagerId": "615c697c2743108ae19a495d",
         "partnerName": "5dwiki",
         "createdAt": 1633446621906,
-        "updatedAt": 1633446621906,
+        "updatedAt": 1633520242655,
+        "isDeleted": false
+    },
+    {
+        "_id": "615d9d3580ded219fc897ab6",
+        "fullName": "patil ",
+        "mobileNumber": "5237489023",
+        "alternateMobileNo": "",
+        "emailId": "patil123@gmail.com",
+        "alternateEmailId": "",
+        "reraNumber": "HTW67939",
+        "address": "",
+        "companyName": "wert",
+        "projectId": "6155edf32c34564cf89a2a55",
+        "salesManagerId": "615c69cd2743108ae19a4960",
+        "partnerName": "5dwiki",
+        "createdAt": 1633525045510,
+        "updatedAt": 1633525742528,
+        "isDeleted": true
+    },
+    {
+        "_id": "615d9f7980ded219fc897ab7",
+        "fullName": "Shweta",
+        "mobileNumber": "7234689012",
+        "alternateMobileNo": "",
+        "emailId": "shweta367@gmail.com",
+        "alternateEmailId": "",
+        "reraNumber": "NJUI835628",
+        "address": "",
+        "companyName": "Ocean",
+        "projectId": "6155edf32c34564cf89a2a55",
+        "salesManagerId": "615c69cd2743108ae19a4960",
+        "partnerName": "5dwiki",
+        "createdAt": 1633525625377,
+        "updatedAt": 1633525625377,
         "isDeleted": false
     }
 ]

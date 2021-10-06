@@ -1,9 +1,9 @@
 import React from 'react';
 
-// import partners from '../../config/partners.json';
+// import projects from '../../config/partners.json';
 // import brokers from '../../config/brokers.json';
 
-import partners from '../../config/data-project.json';
+import projects from '../../config/data-project.json';
 import brokers from '../../config/data-broker.json';
 
 // import Home from '../components/Home_1';
@@ -11,20 +11,25 @@ import Home from '../components/Home';
 
 export async function getStaticPaths() {
 	const pathArray = new Array();
-	const allPartners = JSON.parse(JSON.stringify(partners));
-	allPartners.forEach((partner: any) => {
-		partner.brokers = brokers.filter((broker) => partner.partnerName == broker.partnerName);
-		partner.brokers.forEach((broker: any, index: any) => {
+	const allProjects = JSON.parse(JSON.stringify(projects));
+	allProjects.forEach((project: any) => {
+		if(project.isDeleted) return false;
+
+		project.brokers = brokers.filter((broker) => project._id == broker.projectId);
+		project.brokers.forEach((broker: any, index: any) => {
+			if(broker.isDeleted) return false;
+			
 			let brokerName = broker.fullName.replace(' ','-');
 			brokerName = brokerName.toLowerCase();
 			const paramObj = {
 				params : {
-					partner: [`${partner.partnerName}`, `${index}`, `${brokerName}`]
+					partner: [`${project.partnerName}`, `${index}`, `${brokerName}`]
 				}
 			}
 			pathArray.push(paramObj);
 		});
 	})
+	console.log(pathArray.length)
 	// console.log(JSON.stringify(pathArray))
 	return {
 		paths: pathArray,
@@ -38,11 +43,11 @@ export async function getStaticProps({ params }: any) {
 	brokers.forEach((brokeObj: any) => {
 		let brokerName = brokeObj.fullName.replace(' ','-');
 			brokerName = brokerName.toLowerCase();
-		if (brokerName == params.partner[2]) {
+		if (!foundBroker && brokerName == params.partner[2]) {
 			foundBroker = brokeObj;
 		}
 	});
-	partners.forEach((partner: any) => {
+	projects.forEach((partner: any) => {
 		console.log(params)
 		if (!foundPartner && partner.partnerName == params.partner[0]) {
 			foundPartner = partner;

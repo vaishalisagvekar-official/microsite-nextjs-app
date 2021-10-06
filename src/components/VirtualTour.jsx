@@ -6,6 +6,7 @@ export default function VirtualTour(props) {
     return (
         <div id={props.section} className="amenityContainer">
             <h2 className="sectionTextColor sectionTitle">{title}</h2>
+            <div className="titleBorder"></div>                
             <CarouselContainer sectionId={id} list={list} containerCss="sectionContent" containerHeight="carouselHeight_1"></CarouselContainer>
         </div>
     );
