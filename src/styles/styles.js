@@ -35,14 +35,14 @@ export default css.global`
   padding-left: 25px;
   padding-right: 25px;
 }
-.navbar-collapse .nav-link{
+.nav-link{
 	color: var(--fontColor, white) !important;
   font-weight: 500;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
 
-.navbar-collapse .nav-link:hover{
+.nav-link:hover{
   color: var(blue, white) !important;
 }
 
@@ -109,6 +109,7 @@ export default css.global`
 .description{
   margin-top: 15px;
   margin-bottom: 15px;
+  white-space:pre-wrap;
 }
 
 .amenityIcon{
@@ -126,6 +127,26 @@ export default css.global`
 .sectionContent {
   padding: 30px;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionContent {
+    padding: 30px 0;
+    justify-content: center;
+  }
+  
+  .amenityContainer{
+    background-image: url('https://theratio.s3.amazonaws.com/images/bg2-process.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	  padding: 20px;
+  }
+
+  .carouselHeight_1 {
+    height: 80%;
+    min-height: 270px;
+  }
 }
 
 @media screen and (min-width: 577px) {
@@ -182,21 +203,6 @@ export default css.global`
   }
 }
 
-@media screen and (max-width: 768px) {
-  .amenityContainer{
-    background-image: url('https://theratio.s3.amazonaws.com/images/bg2-process.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	  padding: 20px;
-  }
-
-  .carouselHeight_1 {
-    height: 80%;
-    min-height: 270px;
-  }
-}
-
 .centered {
     position: absolute;
     top: 50%;
@@ -212,10 +218,18 @@ export default css.global`
 
 .carousel-indicators button {
   border-radius: 50% !important;
-  height: 15px !important;
-  width: 15px !important;
+  height: 10px !important;
+  width: 10px !important;
   margin-right: 4px !important;
   margin-left: 4px !important;
+  background: transparent !important;
+  border: 1px solid white !important;
+  opacity: 1 !important;
+}
+
+.carousel-indicators button.active {
+  background: white !important;
+  opacity: 1;
 }
 
 .tourBtn{
@@ -241,12 +255,13 @@ export default css.global`
   font-size: inherit;
   color: white;
   background-color: var(--themeColor, black);
+  white-space:pre-wrap;
 }
 
 .form-control {
 	border: none;
 	border-bottom: 1px solid #dfd5d5;
-	margin-bottom: 24px;
+	margin-bottom: 35px;
 }
 
 .tncLabel{
@@ -423,6 +438,7 @@ img {vertical-align: middle;}
   font-size: 12px;
   margin-top: 10px;
   text-align: left;
+  white-space:pre-wrap;
 }
 
 .viewedImg {

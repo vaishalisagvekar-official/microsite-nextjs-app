@@ -24,7 +24,7 @@ class EnquiryForm extends React.Component {
 		return (
 			<React.Fragment>
 				<div className="col-12">
-					<div style={{display: displayStyle, position: 'relative'}}>
+					<div style={{display: displayStyle, marginBottom: '10px'}}>
 						<h4>Get In Touch</h4>
 					</div>
 					<div style={{marginBottom: '14px'}}>Please fill in your details below and we will get in touch with you shorlty</div>

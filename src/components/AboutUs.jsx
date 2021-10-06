@@ -10,7 +10,7 @@ export default function AboutUs(props) {
                 <div className={`col-12 col-md-6 aboutSections ${props.cssClass}`}>
                     <h2 className="aboutTitle">{displayTitle.toLocaleUpperCase()}</h2>
                     <div className="titleBorder" style={{ margin: '0', color: 'inherit'}}></div>
-                    <div className="description">{description}</div>
+                    <div className="description">{description}\n vaishali</div>
                     <button className="btn themeColor brochure description" onClick={(e) => window.open(brochureLink)}>
                         DOWNLOAD BROCHURE
                     </button>
