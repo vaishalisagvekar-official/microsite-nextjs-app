@@ -71,7 +71,7 @@ class EnquiryForm extends React.Component {
 						</p>	
 					</div>
 					<div className="row" style={{justifyContent : 'center'}}>
-						<button className="btn themeColor" onClick={this.onSubmitEquiryForm}>Submit</button>
+						<button className="btn themeColor" onClick={this.onSubmitEquiryForm}>SUBMIT</button>
 					</div>
 				</form>
 			</React.Fragment>
