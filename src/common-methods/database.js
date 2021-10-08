@@ -24,7 +24,7 @@ export async function connectToDatabase() {
     };
 
     // Connect to cluster
-    let client = new MongoClient(connectionString, opts);
+    let client = new MongoClient(connectionString);
     await client.connect();
     let db = client.db(dbName);
 
