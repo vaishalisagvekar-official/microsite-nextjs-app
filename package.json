@@ -16,6 +16,7 @@
 	"dependencies": {
 		"axios": "^0.21.1",
 		"bootstrap": "^5.1.1",
+		"cors": "^2.8.5",
 		"ga-4-react": "^0.1.281",
 		"jquery": "^3.6.0",
 		"mongodb": "^4.1.2",

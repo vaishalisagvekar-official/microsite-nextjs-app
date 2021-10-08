@@ -1,6 +1,8 @@
 const fs = require('fs');
 var path = require("path");
 const ObjectId = require('mongodb').ObjectId;
+import Cors from 'cors'
+import initMiddleware from '../../common-methods/middleware';
 
 import { getStaticKeys } from '../../common-methods/constants';
 import { updateFileData, readFileData} from '../../common-methods/file-operations';
@@ -9,11 +11,24 @@ import { connectToDatabase } from '../../common-methods/database';
 const filePath = 'D:/plotnetwork/microsite-nextjs/partner-pages/partner-pages-main/config/project.json';
 const relativeFilePath = 'config/project.json';
 
+
+// Initialize the cors middleware
+const cors = initMiddleware(
+  // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
+  Cors({
+    // Only allow requests with GET, POST and OPTIONS
+    methods: ['PUT'],
+  })
+)
+
 async function handler(req, res) {
 
     if (req.method === 'PUT') {
         
         const findProjectQuery = {};
+
+        // Run cors
+        await cors(req, res);
 
         // const findProjectQuery = {
         //     isDeleted : false

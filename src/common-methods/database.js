@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb';
 
-const connectionString = 'mongodb://plotnetworkuser:HaDXynz0VaH2qBoe@cluster0-shard-00-00.bdyvp.mongodb.net:27017,cluster0-shard-00-01.bdyvp.mongodb.net:27017,cluster0-shard-00-02.bdyvp.mongodb.net:27017/plotnetwork?ssl=true&replicaSet=atlas-g566bp-shard-0&authSource=admin&retryWrites=true&w=majority';
+const connectionString = 'mongodb+srv://plotnetworkuser:HaDXynz0VaH2qBoe@cluster0.bdyvp.mongodb.net/plotnetwork';
 const dbName = 'plotnetwork';
 
 let cachedClient = null;
