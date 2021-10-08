@@ -1,4 +1,5 @@
 import { MongoClient } from 'mongodb';
+import { TextEncoder } from 'util';
 
 const connectionString = 'mongodb+srv://plotnetworkuser:HaDXynz0VaH2qBoe@cluster0.bdyvp.mongodb.net/plotnetwork';
 const dbName = 'plotnetwork';
