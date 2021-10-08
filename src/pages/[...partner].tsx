@@ -1,12 +1,8 @@
 import React from 'react';
 
-// import projects from '../../config/partners.json';
-// import brokers from '../../config/brokers.json';
+import projects from '../../config/project.json';
+import brokers from '../../config/broker.json';
 
-import projects from '../../config/data-project.json';
-import brokers from '../../config/data-broker.json';
-
-// import Home from '../components/Home_1';
 import Home from '../components/Home';
 
 export async function getStaticPaths() {
