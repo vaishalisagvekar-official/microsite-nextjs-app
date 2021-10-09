@@ -1,5 +1,5 @@
 {
-	"name": "email-validation",
+	"name": "broker-microsite-nextjs",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -10,8 +10,8 @@
 		"preexport": "npm run build",
 		"export": "next export",
 		"prestart": "npm run export",
-		"prepare": "cd .. && husky install ./email-validation/.husky",
-		"test:unit": "jest ./email-validation/src/tests --collect-coverage --env=jsdom"
+		"prepare": "cd .. && husky install ./broker-microsite-nextjs/.husky",
+		"test:unit": "jest ./broker-microsite-nextjs/src/tests --collect-coverage --env=jsdom"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
